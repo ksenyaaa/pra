@@ -3,4 +3,9 @@
     <string name="two_screen">Two Screen</string>
     <string name="blank_screen">Blank Screen</string>
     <string name="setting_screen">Setting Screen</string>
+    <string name="three_screen">Three Screen</string>
+    <string name="four_screen">Four Screen</string>
+    <string name="five_screen">Five Screen</string>
+    <string name="email">email</string>
+
 </resources>

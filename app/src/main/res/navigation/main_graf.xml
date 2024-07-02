@@ -22,14 +22,37 @@
         <action
             android:id="@+id/action_two_to_blankFragment"
             app:destination="@id/blankFragment" />
+        <action
+            android:id="@+id/action_two_to_three"
+            app:destination="@id/three" />
     </fragment>
     <fragment
         android:id="@+id/setting_fragment"
         android:name="com.example.practice2.setting_fragment"
         android:label="setting_fragment"
-        tools:layout="@layout/fragment_setting" >>
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/five"
+        android:name="com.example.practice2.five"
+        android:label="five" >
         <action
-            android:id="@+id/action_setting_fragment_to_two"
-            app:destination="@id/two" />
+            android:id="@+id/action_five_to_setting_fragment"
+            app:destination="@id/setting_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/four"
+        android:name="com.example.practice2.four"
+        android:label="four" >
+        <action
+            android:id="@+id/action_four_to_five"
+            app:destination="@id/five" />
+    </fragment>
+    <fragment
+        android:id="@+id/three"
+        android:name="com.example.practice2.three"
+        android:label="three" >
+        <action
+            android:id="@+id/action_three_to_four"
+            app:destination="@id/four" />
     </fragment>/>
 </navigation>

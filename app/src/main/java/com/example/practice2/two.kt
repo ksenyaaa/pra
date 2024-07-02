@@ -16,7 +16,10 @@ class two : Fragment(R.layout.fragment_two) {
         binding = FragmentTwoBinding.bind(view)
         binding?.run{
             etEditText.setOnClickListener {
-                findNavController().navigate(R.id.action_two_to_blankFragment)
+                val text = etEmail.text.toString
+                val bundle = Bundle()
+                bundle.putString("ARG_EMAIL", text)
+                findNavController().navigate(R.id.action_two_to_blankFragment, args = bundle)
             }
         }
     }

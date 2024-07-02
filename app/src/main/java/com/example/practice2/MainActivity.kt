@@ -8,7 +8,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.practice2.databinding.ActivityFragmentBinding
 import com.example.practice2.databinding.ActivityMainBinding
 
 
@@ -17,8 +16,8 @@ class MainActivity : AppCompatActivity() {
     private var controller: NavController? = null
     private var binding: ActivityMainBinding? = null
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater).also {
             setContentView(it.root)
         }

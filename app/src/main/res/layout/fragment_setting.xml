@@ -7,10 +7,10 @@
     tools:context=".setting_fragment">
 
     <TextView
+        android:id="@+id/et_EditText"
+        style="@style/AppTitle"
         android:layout_width="wrap_content"
         android:text="@string/setting_screen"
-        android:textSize="28sp"
-        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
