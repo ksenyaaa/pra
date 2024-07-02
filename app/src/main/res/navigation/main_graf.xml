@@ -9,50 +9,35 @@
         android:id="@+id/blankFragment"
         android:name="com.example.practice2.BlankFragment"
         android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" >
-        <action
-            android:id="@+id/action_blankFragment_to_setting_fragment"
-            app:destination="@id/setting_fragment" />
-    </fragment>
+        tools:layout="@layout/fragment_blank" />
     <fragment
         android:id="@+id/two"
-        android:name="com.example.practice2.two"
+        android:name="com.example.practice2.TwoFragment"
         android:label="two"
         tools:layout="@layout/fragment_two" >
         <action
             android:id="@+id/action_two_to_blankFragment"
-            app:destination="@id/blankFragment" />
-        <action
-            android:id="@+id/action_two_to_three"
-            app:destination="@id/three" />
+            app:destination="@id/blankFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/setting_fragment"
-        android:name="com.example.practice2.setting_fragment"
+        android:name="com.example.practice2.SettingFragment"
         android:label="setting_fragment"
         tools:layout="@layout/fragment_setting" />
     <fragment
         android:id="@+id/five"
-        android:name="com.example.practice2.five"
-        android:label="five" >
-        <action
-            android:id="@+id/action_five_to_setting_fragment"
-            app:destination="@id/setting_fragment" />
-    </fragment>
+        android:name="com.example.practice2.FiveFragment"
+        android:label="five" />
     <fragment
         android:id="@+id/four"
-        android:name="com.example.practice2.four"
-        android:label="four" >
-        <action
-            android:id="@+id/action_four_to_five"
-            app:destination="@id/five" />
-    </fragment>
+        android:name="com.example.practice2.FourFragment"
+        android:label="four" />
     <fragment
         android:id="@+id/three"
-        android:name="com.example.practice2.three"
-        android:label="three" >
-        <action
-            android:id="@+id/action_three_to_four"
-            app:destination="@id/four" />
-    </fragment>/>
+        android:name="com.example.practice2.ThreeFragment"
+        android:label="three" />/>
 </navigation>

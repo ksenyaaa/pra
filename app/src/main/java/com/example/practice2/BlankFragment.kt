@@ -14,15 +14,23 @@ class BlankFragment : Fragment(R.layout.fragment_blank) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentBlankBinding.bind(view)
-
+        val message = arguments?.getString("ARG_ID") ?: "EMPTY"
         binding?.run {
-
+            tvScreenTitle.text = message
         }
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
 
+    }
+    companion object {
+        private const val ARG_ID = "ARG_ID"
+
+        fun newInstance(arg: String): Bundle = Bundle().apply {
+            putString(ARG_ID, arg)
+        }
     }
 
 }

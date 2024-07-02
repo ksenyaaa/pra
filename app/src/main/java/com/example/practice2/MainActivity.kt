@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.example.practice2.databinding.ActivityMainBinding
 
 
@@ -24,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         controller = (supportFragmentManager.findFragmentById(R.id.container) as
                 NavHostFragment).navController
+        controller?.let { navController ->
+            binding?.bottomNav?.setupWithNavController(navController)
+        }
 
     }
 

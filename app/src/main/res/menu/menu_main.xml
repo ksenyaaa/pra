@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/two"
+        android:icon="@drawable/baseline_android_24"
+        android:title="Two" />
+    <item
+        android:id="@+id/three"
+        android:icon="@drawable/baseline_looks_3_24"
+        android:title="Three" />
+    <item
+        android:id="@+id/four"
+        android:icon="@drawable/baseline_brightness_2_24"
+        android:title="Four" />
+    <item
+        android:id="@+id/five"
+        android:icon="@drawable/baseline_brush_24"
+        android:title="Five" />
+    <item
+        android:id="@+id/setting_fragment"
+        android:icon="@drawable/baseline_settings_suggest_24"
+        android:title="Settings" />
+</menu>
+
