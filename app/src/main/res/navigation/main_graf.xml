@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/setting_fragment"
-        android:name="com.example.practice2.SettingFragment"
+        android:name="com.example.practice2.FilmFragment"
         android:label="setting_fragment"
         tools:layout="@layout/fragment_setting" />
     <fragment
