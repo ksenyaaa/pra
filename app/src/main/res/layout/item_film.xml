@@ -18,8 +18,8 @@
 
         <ImageView
             android:id="@+id/ivImage"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -33,7 +33,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tvTypes"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivImage"
             tools:scr = "https://trueposters.ru/pictures/product/big/5469_big.jpg"
             tools:text="Interstellar" />
 
